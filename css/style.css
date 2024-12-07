@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: auto;
+    padding:0 20px; 
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/pexels-pixabay-414630.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px; 
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.welcome-text {
+    position: absolute;
+    width: 80%; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome-text h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 10px 20px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.welcome-text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0 10px; 
+    }
+
+    .logo {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .nav-area {
+        float: none;
+        margin-top: 10px;
+    }
+
+    .nav-area li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-area li a {
+        padding: 10px; 
+        font-size: 14px;
+    }
+
+    .welcome-text {
+        width: 100%;
+        height: auto;
+        margin: 20% 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome-text a {
+        font-size: 0.9em;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
